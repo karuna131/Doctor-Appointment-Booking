@@ -1,0 +1,306 @@
+.booking-heading {
+    text-align: center;
+    color: #1e3a5f;
+    font-family: Arial, sans-serif;
+    margin: 30px 0 20px;
+}
+
+.booking-form {
+    max-width: 500px;
+    margin: 20px auto 40px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.booking-form h2 {
+    color: #1e3a5f;
+    margin: 20px 0 18px;
+    font-size: 21px;
+}
+
+.booking-form h2:first-child {
+    margin-top: 0;
+}
+
+.booking-form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+.booking-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.booking-form button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #0f766e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.booking-form button:hover {
+    background-color: #115e59;
+}
+
+.booking-form button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+
+/* ==============================
+   Shared Review & Confirmation
+================================= */
+
+.booking-review,
+.confirmation {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.booking-review h1,
+.confirmation h1 {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 28px;
+    margin: 0 0 25px;
+}
+
+.booking-review h2,
+.confirmation h2 {
+    color: #1e3a5f;
+    font-size: 20px;
+    margin: 25px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.booking-review h2:first-of-type,
+.confirmation h2:first-of-type {
+    margin-top: 0;
+}
+
+.booking-review p,
+.confirmation p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+/* Highlight important values */
+
+.booking-review p strong,
+.confirmation p strong {
+    color: #1e3a5f;
+}
+
+
+/* ==============================
+   Review Page Buttons
+================================= */
+
+.booking-review-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.booking-review-actions button {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.edit-booking-btn {
+    background-color: #e5e7eb;
+    color: #1f2937;
+}
+
+.edit-booking-btn:hover {
+    background-color: #d1d5db;
+}
+
+.confirm-booking-btn {
+    background-color: #0f766e;
+    color: white;
+}
+
+.confirm-booking-btn:hover {
+    background-color: #115e59;
+}
+
+.booking-review-actions button:disabled {
+    background-color: #9ca3af;
+    color: white;
+    cursor: not-allowed;
+}
+
+
+/* ==============================
+   Appointment Confirmation
+================================= */
+
+.confirmation {
+    border-top: 5px solid #0f766e;
+}
+
+.confirmation h1 {
+    color: #0f766e;
+}
+
+.confirmation > p:first-of-type {
+    background-color: #f0fdfa;
+    border: 1px dashed #0f766e;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: 600;
+    color: #115e59;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.print-btn {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #0f766e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.print-btn:hover {
+    background-color: #115e59;
+}
+
+
+/* ==============================
+   Responsive Design
+================================= */
+
+@media (max-width: 550px) {
+    .booking-heading {
+        font-size: 25px;
+        margin: 22px 12px;
+    }
+
+    .booking-form {
+        margin: 15px 12px 25px;
+        padding: 18px;
+    }
+
+    .booking-review,
+    .confirmation {
+        margin: 20px 12px;
+        padding: 20px;
+    }
+
+    .booking-review h1,
+    .confirmation h1 {
+        font-size: 23px;
+    }
+
+    .booking-review h2,
+    .confirmation h2 {
+        font-size: 18px;
+    }
+
+    .booking-review-actions {
+        flex-direction: column;
+    }
+
+    .booking-review-actions button {
+        width: 100%;
+    }
+}
+
+
+/* ==============================
+   Print Appointment Summary
+================================= */
+
+@media print {
+    body {
+        background: white !important;
+    }
+
+    body * {
+        visibility: hidden;
+    }
+
+    .confirmation,
+    .confirmation * {
+        visibility: visible;
+    }
+
+    .confirmation {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 20px;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .print-btn {
+        display: none !important;
+    }
+}
