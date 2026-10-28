@@ -6,8 +6,8 @@ import Home from './components/Home'
 import MainLayout from './components/MainLayout';
 import About from './components/About';
 import Contact from './components/ContactUs'
-import Appointments from "./components/AppointmentDashboard"
-
+import Appointments from "./components/AppointmentDashboard";
+import Reschedule from './components/Reschedule';
 import './App.css'
 
 function App(){
@@ -22,11 +22,12 @@ function App(){
                 <Route path="/myAppointments" element={<Appointments />}/>
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
-                <Route path='/reschedule/:id' element={<Booking />} />
+                <Route path='/reschedule/:id' element={<Reschedule />} />
             </Route>
         </Routes>
         </>
     )
 }
+
 
 export default App;

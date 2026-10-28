@@ -1,0 +1,51 @@
+.reschedule-container {
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.reschedule-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.reschedule-container h2 {
+    margin-bottom: 5px;
+}
+
+.reschedule-container p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.reschedule-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reschedule-container input,
+.reschedule-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.reschedule-container button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0f766e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reschedule-container button:hover {
+    background-color: #0f766e;
+}

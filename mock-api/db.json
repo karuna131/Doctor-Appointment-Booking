@@ -649,9 +649,9 @@
       "doctorId": "1",
       "doctorName": "Dr. Rahul Sharma",
       "specialization": "Cardiologist",
-      "appointmentDate": "2026-11-04",
-      "appointmentDay": "Wednesday",
-      "timeSlot": "12:30 PM",
+      "appointmentDate": "2026-10-31",
+      "appointmentDay": "Saturday",
+      "timeSlot": "11:00 AM",
       "patientDetails": {
         "patientName": "Kittu",
         "age": "24",

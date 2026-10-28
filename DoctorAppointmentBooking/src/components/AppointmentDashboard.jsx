@@ -60,7 +60,9 @@ function Appointments(){
     }
 
     function handleReschedule(ele) {
-        navigate(`/reschedule/${ele.id}`);
+        navigate(`/reschedule/${ele.id}`, {
+            state: { appointment: ele }
+        });
     }
 
     return (
