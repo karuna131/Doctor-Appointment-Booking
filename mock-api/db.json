@@ -591,47 +591,11 @@
   ],
   "BookingData": [
     {
-      "id": "EmvCtQJ7dTk",
-      "doctorId": "1",
-      "doctorName": "Dr. Rahul Sharma",
-      "specialization": "Cardiologist",
-      "appointmentDate": "2026-10-29",
-      "appointmentDay": "Thursday",
-      "timeSlot": "12:00 PM",
-      "patientDetails": {
-        "patientName": "Karuna",
-        "age": "20",
-        "gender": "Female",
-        "phone": "1234567890",
-        "email": "karuna@gmail.com",
-        "reason": "testing"
-      },
-      "status": "Cancelled"
-    },
-    {
-      "id": "Hskmw4Y_wWY",
-      "doctorId": "1",
-      "doctorName": "Dr. Rahul Sharma",
-      "specialization": "Cardiologist",
-      "appointmentDate": "2026-10-28",
-      "appointmentDay": "Wednesday",
-      "timeSlot": "11:30 AM",
-      "patientDetails": {
-        "patientName": "Karuna",
-        "age": "20",
-        "gender": "Female",
-        "phone": "1234567890",
-        "email": "karuna@gmail.com",
-        "reason": "testing"
-      },
-      "status": "Cancelled"
-    },
-    {
       "id": "X1FnJQELa2k",
       "doctorId": "1",
       "doctorName": "Dr. Rahul Sharma",
       "specialization": "Cardiologist",
-      "appointmentDate": "2026-10-28",
+      "appointmentDate": "2026-10-31",
       "appointmentDay": "Wednesday",
       "timeSlot": "1:30 PM",
       "patientDetails": {
@@ -650,8 +614,8 @@
       "doctorName": "Dr. Rahul Sharma",
       "specialization": "Cardiologist",
       "appointmentDate": "2026-10-31",
-      "appointmentDay": "Saturday",
-      "timeSlot": "11:00 AM",
+      "appointmentDay": "Thursday",
+      "timeSlot": "12:30 PM",
       "patientDetails": {
         "patientName": "Kittu",
         "age": "24",
@@ -659,6 +623,24 @@
         "phone": "1234567890",
         "email": "karuna@gmail.com",
         "reason": "testing"
+      },
+      "status": "Confirmed"
+    },
+    {
+      "id": "iiw9NNpI21c",
+      "doctorId": "7",
+      "doctorName": "Dr. Karan Singh",
+      "specialization": "General Physician",
+      "appointmentDate": "2026-10-31",
+      "appointmentDay": "Thursday",
+      "timeSlot": "6:00 PM",
+      "patientDetails": {
+        "patientName": "Srishti Barnwal",
+        "age": "18",
+        "gender": "Female",
+        "phone": "7052363362",
+        "email": "srishtibarnwalsrishtibarnwal@gmail.com",
+        "reason": "I have lot of back and i am suffering from neck pain as well ."
       },
       "status": "Confirmed"
     }

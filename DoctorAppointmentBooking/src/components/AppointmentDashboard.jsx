@@ -1,14 +1,7 @@
 import {useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import '../Appointments.css'
 import { useNavigate } from "react-router";
-
-async function fetchData(){
-    const response = await fetch('http://localhost:3000/BookingData');
-    if(!response.ok){
-        throw new Error('Not able to fetch data');
-    }
-    return response.json();
-}
+import useGetAppointmentData from '../customFunction/commanQuery'
 
 
 async function updateData({id, updatedData}){
@@ -25,10 +18,7 @@ function Appointments(){
     const queryClient = useQueryClient();
     const navigate = useNavigate();
 
-    const {data, isPending, isError, error} = useQuery({
-        queryKey: ['appointmentData'],
-        queryFn: fetchData
-    })
+    const {data, isPending, isError, error} = useGetAppointmentData();
 
     const mutation = useMutation({
         mutationFn : updateData,
@@ -84,9 +74,7 @@ function Appointments(){
                             <p>Patient Name: {ele.patientDetails.patientName}</p>
                         </div>
                         <div>
-                            {ele.status === "Confirmed" && new Date(ele.appointmentDate) < new Date() ? (
-                                <span style={{ color: "Red" }}>Missed Appointment</span>
-                            ) : ele.status === "Confirmed" ? (
+                            {ele.status == "Confirmed" ? (
                                 <>
                                     <span style={{color: "Green", marginLeft:"50px"}}>{ele.status}</span>
                                     <div>
@@ -94,7 +82,9 @@ function Appointments(){
                                         <button onClick={() => handleCancel(ele)}> Cancel </button>
                                     </div>
                                 </>
-                            ) : (
+                            ) : ele.status == "Completed" ? (
+                                <span style={{color: "blue"}}>{ele.status}</span>)
+                            : (
                                 <span style={{color: "Red"}}>{ele.status}</span>
                             )}                
                         </div>

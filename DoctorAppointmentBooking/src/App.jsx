@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/ContactUs'
 import Appointments from "./components/AppointmentDashboard";
 import Reschedule from './components/Reschedule';
+import AdminPanel from './components/AdminPanel';
 import './App.css'
 
 function App(){
@@ -23,6 +24,7 @@ function App(){
                 <Route path='/about' element={<About />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/reschedule/:id' element={<Reschedule />} />
+                <Route path="/admin" element={<AdminPanel />}/>
             </Route>
         </Routes>
         </>
