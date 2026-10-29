@@ -84,9 +84,19 @@ function Appointments(){
                             <p>Patient Name: {ele.patientDetails.patientName}</p>
                         </div>
                         <div>
-                            {ele.status == "Confirmed" ? <span style={{color:"Green"}}>{ele.status}</span> : <span style={{color:"Red"}}>{ele.status}</span> }
-                            <button onClick={()=>handleReschedule(ele)}>Reschedule</button>
-                            <button onClick={() => handleCancel(ele)}>Cancel</button>
+                            {ele.status === "Confirmed" && new Date(ele.appointmentDate) < new Date() ? (
+                                <span style={{ color: "Red" }}>Missed Appointment</span>
+                            ) : ele.status === "Confirmed" ? (
+                                <>
+                                    <span style={{color: "Green", marginLeft:"50px"}}>{ele.status}</span>
+                                    <div>
+                                        <button onClick={() => handleReschedule(ele)}> Reschedule </button>
+                                        <button onClick={() => handleCancel(ele)}> Cancel </button>
+                                    </div>
+                                </>
+                            ) : (
+                                <span style={{color: "Red"}}>{ele.status}</span>
+                            )}                
                         </div>
                     </div>
                 ))
